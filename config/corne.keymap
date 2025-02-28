@@ -27,7 +27,7 @@
 &none  &kp Q       &kp W           &kp E        &kp R            &kp T           &kp Y        &kp U        &kp I        &kp O       &kp P          &none
 &none  &mt LGUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F      &kp G           &kp H        &mt LSHFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &none
 &none  &kp Z       &kp X           &kp C        &kp V            &kp B           &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH       &none
-                                   &lt 2 ESC    &lt 1 BACKSPACE  &lt 1 DELETE    &lt 1 ENTER  &lt 1 SPACE  &lt 1 TAB
+                                   &lt 2 ESC    &lt 3 BACKSPACE  &lt 4 DELETE    &lt 5 ENTER  &lt 1 SPACE  &lt 1 TAB
             >;
         };
 
@@ -70,6 +70,15 @@
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &caps_word  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
 &none  &none     &none     &none      &none      &none    &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
                            &none      &none      &none    &mkp RCLK   &mkp LCLK       &mkp MCLK
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans  &kp LS(LEFT_BRACKET)  &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp LS(SEMI)          &kp LS(N4)  &kp LS(N5)     &kp LS(N5)  &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp LS(GRAVE)         &kp LS(N1)  &kp LS(N2)     &kp LS(N3)  &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
+                                          &kp LS(MINUS)  &kp LS(N9)  &kp LS(N0)               &trans  &trans     &trans
             >;
         };
     };
