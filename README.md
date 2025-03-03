@@ -5,3 +5,7 @@
 - keymap editor: [nickcoutsos.github.io/keymap-editor/](https://nickcoutsos.github.io/keymap-editor/)
 
 :information_source: remember to reset the bluetooth profiles after flashing new firmware
+
+## TODO
+
+- [ ] use ZMK mouse PR in workflow
