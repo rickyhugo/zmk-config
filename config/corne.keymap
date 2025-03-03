@@ -13,6 +13,133 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        world_ao_base: world_ao {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp O &kp A>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "WORLD_AO";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        world_ao_lsft: world_ao_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp O &kp LS(A)>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "WORLD_AO_LSFT";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        world_ae_base: world_ae_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp A>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "WORLD_AE_BASE";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        world_ae_lsft: world_ae_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp LS(A)>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "WORLD_AE_LSFT";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        world_o_base: world_o_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp O>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "WORLD_O_BASE";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        world_o_lsft: world_o_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp LS(O)>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "WORLD_O_LSFT";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+    };
+
+    behaviors {
+        world_ao: world_ao {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_AO";
+            bindings = <&world_ao_base>, <&world_ao_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        world_ae: world_ae {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_AE";
+            bindings = <&world_ae_base>, <&world_ae_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        world_o: world_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_O";
+            bindings = <&world_o_base>, <&world_o_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,7 +167,7 @@
             >;
         };
 
-        nav {
+        navigation {
             bindings = <
 &none  &none     &none     &none      &none      &none    &kp LC(Z)   &kp LC(X)  &kp LC(C)      &kp LC(V)    &kp LC(Y)  &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &caps_word  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
@@ -87,10 +214,10 @@
 
         world {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans        &trans     &trans     &trans     &trans    &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &trans     &world_ao  &world_ae  &world_o  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans        &trans     &trans     &trans     &trans    &trans  &trans
+                            &kp ESC    &kp BSPC   &kp DELETE    &kp ENTER  &kp SPACE  &kp TAB
             >;
         };
 
