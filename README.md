@@ -8,4 +8,4 @@
 
 ## TODO
 
-- [ ] use ZMK mouse PR in workflow
+- [ ] enable mouse emulation (https://zmk.dev/docs/keymaps/behaviors/mouse-emulation)
