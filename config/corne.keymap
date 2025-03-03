@@ -185,21 +185,21 @@
             >;
         };
 
-        symbol {
-            bindings = <
-&trans  &kp LS(LEFT_BRACKET)  &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp LS(SEMI)          &kp LS(N4)  &kp LS(N5)     &kp LS(N5)  &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &kp LS(GRAVE)         &kp LS(N1)  &kp LS(N2)     &kp LS(N3)  &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
-                                          &kp LS(MINUS)  &kp LS(N9)  &kp LS(N0)               &trans  &trans     &trans
-            >;
-        };
-
         number {
             bindings = <
 &trans  &kp LEFT_BRACKET  &kp N7  &kp N8     &kp N9   &kp RIGHT_BRACKET    &trans  &trans     &trans     &trans    &trans    &trans
 &trans  &kp SEMI          &kp N4  &kp N5     &kp N5   &kp EQUAL            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
 &trans  &kp GRAVE         &kp N1  &kp N2     &kp N3   &kp BACKSLASH        &trans  &trans     &trans     &trans    &trans    &trans
                                   &kp MINUS  &kp DOT  &kp N0               &trans  &trans     &trans
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans  &kp LS(LEFT_BRACKET)  &kp LS(N7)  &kp LS(N8)     &kp LS(N9)        &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp LS(SEMI)          &kp LS(N4)  &kp LS(N5)     &kp LS(NUMBER_6)  &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp LS(GRAVE)         &kp LS(N1)  &kp LS(N2)     &kp LS(N3)        &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
+                                          &kp LS(MINUS)  &kp LS(N9)        &kp LS(N0)               &trans  &trans     &trans
             >;
         };
 
