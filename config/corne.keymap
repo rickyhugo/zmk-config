@@ -12,6 +12,10 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&mt {
+    tapping-term-ms = <150>;
+};
+
 / {
     macros {
         world_ao_base: world_ao {
