@@ -21,7 +21,7 @@
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_tap>,
-                <&kp O &kp A>,
+                <&kp ASTRK &kp A>,
                 <&macro_release>,
                 <&kp RALT>;
 
@@ -37,7 +37,7 @@
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_tap>,
-                <&kp O &kp LS(A)>,
+                <&kp ASTRK &kp LS(A)>,
                 <&macro_release>,
                 <&kp RALT>;
 
@@ -109,6 +109,22 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
+        world_acute_base: world_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp APOS &kp A>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "WORLD_ACUTE";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
     };
 
     behaviors {
@@ -134,6 +150,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "WORLD_O";
             bindings = <&world_o_base>, <&world_o_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        world_acute: world_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_ACUTE";
+            bindings = <&world_acute_base>, <&world_acute_base>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -214,10 +239,10 @@
 
         world {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans        &trans     &trans     &trans     &trans    &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &trans     &world_ao  &world_ae  &world_o  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans        &trans     &trans     &trans     &trans    &trans  &trans
-                            &kp ESC    &kp BSPC   &kp DELETE    &kp ENTER  &kp SPACE  &kp TAB
+&trans  &trans    &trans    &trans     &trans     &trans        &trans        &trans     &trans     &trans    &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &world_acute  &world_ao  &world_ae  &world_o  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans        &trans        &trans     &trans     &trans    &trans  &trans
+                            &kp ESC    &kp BSPC   &kp DELETE    &kp ENTER     &kp SPACE  &kp TAB
             >;
         };
 
