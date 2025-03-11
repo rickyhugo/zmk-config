@@ -116,7 +116,7 @@
             bindings =
                 <&macro_param_1to1>,
                 <&macro_press>,
-                <&kp RALT>,
+                <&kp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&kp APOS &kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
@@ -154,14 +154,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };
-
-        world_acute: world_acute {
-            compatible = "zmk,behavior-macro-one-param";
-            label = "WORLD_ACUTE";
-            bindings = <&world_acute_base>;
-
-            #binding-cells = <1>;
         };
     };
 
