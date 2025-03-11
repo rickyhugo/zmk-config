@@ -223,10 +223,10 @@
 
         button {
             bindings = <
-&trans  &trans  &trans     &kp LC(Z)  &kp LC(Y)  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LALT   &kp LCTRL  &kp LSHFT  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                           &mkp MCLK  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans
+&trans  &trans    &trans     &kp LC(Z)  &kp LC(Y)  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                             &mkp MCLK  &mkp LCLK  &mkp RCLK    &trans  &trans  &trans
             >;
         };
 
