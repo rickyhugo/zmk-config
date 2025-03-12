@@ -151,9 +151,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q       &kp W           &lt 9 E      &kp R            &kp T           &kp Y        &kp U        &kp I        &kp O       &kp P          &none
-&none  &mt LGUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F      &kp G           &kp H        &mt LSHFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &none
-&none  &lt 8 Z     &kp X           &kp C        &kp V            &kp B           &kp N        &kp M        &kp COMMA    &kp DOT     &lt 7 SLASH    &none
+&none  &kp Q       &kp W           &lt 9 E      &kp R            &kp T           &kp Y        &kp U        &kp I        &kp O       &kp P                  &none
+&none  &mt LGUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F      &kp G           &kp H        &mt LSHFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SINGLE_QUOTE  &none
+&none  &lt 8 Z     &kp X           &kp C        &kp V            &kp B           &kp N        &kp M        &kp COMMA    &kp DOT     &lt 7 SLASH            &none
                                    &lt 1 ESC    &lt 2 BACKSPACE  &lt 3 DELETE    &lt 4 ENTER  &lt 5 SPACE  &lt 6 TAB
             >;
         };
