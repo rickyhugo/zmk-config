@@ -160,7 +160,7 @@
 
         media {
             bindings = <
-&none  &none     &none     &none      &none      &none    &bt BT_CLR_ALL  &none         &none         &none         &none         &none
+&none  &none     &none     &none      &none      &none    &bt BT_CLR_ALL  &bt BT_CLR    &none         &none         &none         &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp LA(LC(S))   &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &none
 &none  &none     &none     &none      &none      &none    &out OUT_USB    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
                            &none      &none      &none    &kp C_STOP      &kp C_PP      &kp C_MUTE
