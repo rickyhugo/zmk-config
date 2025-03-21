@@ -196,10 +196,10 @@
 
         symbol {
             bindings = <
-&trans  &kp LS(LEFT_BRACKET)  &kp LS(N7)  &kp LS(N8)     &kp LS(N9)        &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp LS(SEMI)          &kp LS(N4)  &kp LS(N5)     &kp LS(NUMBER_6)  &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &kp LS(GRAVE)         &kp LS(N1)  &kp LS(N2)     &kp LS(N3)        &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
-                                          &kp LS(MINUS)  &kp LS(N9)        &kp LS(N0)               &trans  &trans     &trans
+&trans  &kp LS(LEFT_BRACKET)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)        &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp LS(SEMI)          &kp LS(N4)  &kp LS(N5)  &kp LS(NUMBER_6)  &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp LS(GRAVE)         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)        &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
+                                          &kp LS(N9)  &kp LS(N0)        &kp LS(MINUS)            &trans  &trans     &trans
             >;
         };
 
