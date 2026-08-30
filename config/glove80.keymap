@@ -58,7 +58,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty34 {
+        qwerty36 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
@@ -68,12 +68,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&none  &none           &none           &none        &none                                                                                               &none        &none        &none           &none                      &none
-&none  &none           &none           &none        &none        &none                                                                           &none  &none        &none        &none           &none                      &none
-&none  &kp Q           &kp W           &lt 2 E      &kp R        &kp T                                                                           &kp Y  &kp U        &kp I        &kp O           &kp P                      &none
-&none  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                                                           &kp H  &mt LSHFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LEFT_GUI SINGLE_QUOTE  &none
-&none  &lt 4 Z         &kp X           &kp C        &kp V        &kp B  &none         &none            &none    &none  &none        &none        &kp N  &kp M        &kp COMMA    &kp DOT         &lt 3 SLASH                &none
-&mo 1  &none           &none           &none        &none               &lt 5 ESCAPE  &lt 8 BACKSPACE  &none    &none  &lt 6 ENTER  &lt 7 SPACE         &none        &none        &none           &none                      &none
+&none  &none           &none           &none        &none                                                                                                        &none        &none        &none           &none                      &none
+&none  &none           &none           &none        &none        &none                                                                                    &none  &none        &none        &none           &none                      &none
+&none  &kp Q           &kp W           &lt 2 E      &kp R        &kp T                                                                                    &kp Y  &kp U        &kp I        &kp O           &kp P                      &none
+&none  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                                                                    &kp H  &mt LSHFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LEFT_GUI SINGLE_QUOTE  &none
+&none  &lt 4 Z         &kp X           &kp C        &kp V        &kp B  &none         &none            &none        &none        &none        &none       &kp N  &kp M        &kp COMMA    &kp DOT         &lt 3 SLASH                &none
+&mo 1  &none           &none           &none        &none               &lt 5 ESCAPE  &lt 8 BACKSPACE  &lt 9 TAB    &lt 6 ENTER  &lt 7 SPACE  &lt 10 DEL         &none        &none        &none           &none                      &none
             >;
         };
 
@@ -162,6 +162,28 @@
 &none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none         &none  &none  &none    &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        function {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
