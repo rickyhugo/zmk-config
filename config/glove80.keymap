@@ -93,7 +93,7 @@
                 <&macro_tap>,
                 <&kp ASTERISK &kp A>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>;
+                <&kp RALT>;
 
             label = "WORLD_AO_BASE";
         };
@@ -107,7 +107,7 @@
                 <&macro_tap>,
                 <&kp ASTERISK &kp LS(A)>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>;
+                <&kp RALT>;
 
             label = "WORLD_AO_LSFT";
         };
@@ -121,7 +121,7 @@
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES &kp A>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>;
+                <&kp RALT>;
 
             label = "WORLD_AE_BASE";
         };
@@ -135,7 +135,7 @@
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES &kp LS(A)>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>;
+                <&kp RALT>;
 
             label = "WORLD_AE_LSFT";
         };
@@ -149,7 +149,7 @@
                 <&macro_tap>,
                 <&kp DOUBLE_QUOTES &kp O>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>;
+                <&kp RALT>;
 
             label = "WORLD_O_BASE";
         };
@@ -161,9 +161,9 @@
                 <&macro_press>,
                 <&kp RALT>,
                 <&macro_tap>,
-                <&kp DOUBLE_QUOTES &kp O>,
+                <&kp DOUBLE_QUOTES &kp LS(O)>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>;
+                <&kp RALT>;
 
             label = "WORLD_O_LSFT";
         };
