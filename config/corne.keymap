@@ -214,10 +214,10 @@
 
         world {
             bindings = <
-&none  &none     &none     &none      &none      &none         &none         &none      &none      &none     &none  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none         &kp RA(APOS)  &world_ao  &world_ae  &world_o  &none  &none
-&none  &none     &none     &none      &none      &none         &none         &none      &none      &none     &none  &none
-                           &kp ESC    &kp BSPC   &kp DELETE    &kp ENTER     &kp SPACE  &kp TAB
+&none  &none     &none     &none      &none      &none      &none         &none      &none       &none     &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none      &kp RA(APOS)  &world_ao  &world_ae   &world_o  &none  &none
+&none  &none     &none     &none      &none      &none      &none         &none      &none       &none     &none  &none
+                           &kp ESC    &kp BSPC   &kp TAB    &kp ENTER     &kp SPACE  &kp DELETE
             >;
         };
 
