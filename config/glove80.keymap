@@ -259,12 +259,12 @@
 
         navigation {
             bindings = <
-&none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none    &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none     &none     &none      &none                                                                     &none      &none           &none         &none      &none
+&none  &none     &none     &none      &none      &none                                              &none       &none      &none           &none         &none      &none
+&none  &none     &none     &none      &none      &none                                              &kp LC(Z)   &kp LC(X)  &kp LC(C)       &kp LC(V)     &kp LC(Y)  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                              &caps_word  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none
+&none  &none     &none     &none      &none      &none  &none  &none  &none    &none  &none  &none  &none       &none      &none           &none         &none      &none
+&none  &none     &none     &none      &none             &none  &none  &none    &none  &none  &none              &none      &none           &none         &none      &none
             >;
         };
 
