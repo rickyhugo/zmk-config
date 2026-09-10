@@ -214,12 +214,12 @@
 
         world {
             bindings = <
-&none  &none         &none         &none      &none                                                                                      &none  &none  &none  &none  &none
-&none  &none         &none         &none      &none      &none                                                             &none         &none  &none  &none  &none  &none
-&none  &none         &none         &none      &none      &none                                                             &none         &none  &none  &none  &none  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                             &kp RA(APOS)  &none  &none  &none  &none  &none
-&none  &none         &none         &none      &none      &none  &none       &none          &none      &none  &none  &none  &none         &none  &none  &none  &none  &none
-&none  &none         &none         &none      &none             &kp ESCAPE  &kp BACKSPACE  &kp TAB    &none  &none  &none                &none  &none  &none  &none  &none
+&none  &none         &none         &none      &none                                                                                      &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                             &kp RA(APOS)  &world_ao  &world_ae  &world_o  &none  &none
+&none  &none         &none         &none      &none      &none  &none       &none          &none      &none  &none  &none  &none         &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none             &kp ESCAPE  &kp BACKSPACE  &kp TAB    &none  &none  &none                &none      &none      &none     &none  &none
             >;
         };
 
