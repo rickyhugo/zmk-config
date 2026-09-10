@@ -182,12 +182,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&none  &none           &none           &none        &none                                                                                                        &none        &none        &none           &none                      &none
-&none  &none           &none           &none        &none        &none                                                                                    &none  &none        &none        &none           &none                      &none
-&none  &kp Q           &kp W           &lt 2 E      &kp R        &kp T                                                                                    &kp Y  &kp U        &kp I        &kp O           &kp P                      &none
-&none  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                                                                    &kp H  &mt LSHFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LEFT_GUI SINGLE_QUOTE  &none
-&none  &lt 4 Z         &kp X           &kp C        &kp V        &kp B  &none         &none            &none        &none        &none        &none       &kp N  &kp M        &kp COMMA    &kp DOT         &lt 3 SLASH                &none
-&mo 1  &none           &none           &none        &none               &lt 5 ESCAPE  &lt 8 BACKSPACE  &lt 9 TAB    &lt 6 ENTER  &lt 7 SPACE  &lt 10 DEL         &none        &none        &none           &none                      &none
+&none  &none           &none           &none        &none                                                                                                       &none        &none        &none           &none                      &none
+&none  &none           &none           &none        &none        &none                                                                                   &none  &none        &none        &none           &none                      &none
+&none  &kp Q           &kp W           &lt 2 E      &kp R        &kp T                                                                                   &kp Y  &kp U        &kp I        &kp O           &kp P                      &none
+&none  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                                                                   &kp H  &mt LSHFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LEFT_GUI SINGLE_QUOTE  &none
+&none  &lt 4 Z         &kp X           &kp C        &kp V        &kp B  &none         &none            &none        &none        &none        &none      &kp N  &kp M        &kp COMMA    &kp DOT         &lt 3 SLASH                &none
+&mo 1  &none           &none           &none        &none               &lt 0 ESCAPE  &lt 7 BACKSPACE  &lt 8 TAB    &lt 5 ENTER  &lt 6 SPACE  &lt 9 DEL         &none        &none        &none           &none                      &none
             >;
         };
 
@@ -232,17 +232,6 @@
 &none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                          &none  &none  &none  &none  &none  &none
 &none  &none     &kp LC(X)     &kp LC(C)  &kp LC(V)  &none  &none      &none      &none        &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none     &none         &none      &none             &mkp MCLK  &mkp LCLK  &mkp RCLK    &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        media {
-            bindings = <
-&none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none    &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -298,6 +287,28 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        media {
+            bindings = <
+&none  &none         &none         &none      &none                                                                             &none       &none         &none         &none       &none
+&none  &none         &none         &none      &none      &none                                                           &none  &none       &none         &none         &none       &none
+&none  &none         &none         &none      &none      &none                                                           &none  &none       &none         &none         &none       &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                           &none  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
+&none  &none         &none         &none      &none      &none  &none  &none  &none    &none       &none     &none       &none  &none       &none         &none         &none       &none
+&none  &none         &none         &none      &none             &none  &none  &none    &kp C_STOP  &kp C_PP  &kp C_MUTE         &none       &none         &none         &none       &none
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&none  &none         &none         &none      &none                                                                                      &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                             &kp RA(APOS)  &world_ao  &world_ae  &world_o  &none  &none
+&none  &none         &none         &none      &none      &none  &none       &none          &none      &none  &none  &none  &none         &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none             &kp ESCAPE  &kp BACKSPACE  &kp TAB    &none  &none  &none                &none      &none      &none     &none  &none
             >;
         };
     };
