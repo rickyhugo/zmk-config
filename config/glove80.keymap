@@ -31,7 +31,25 @@
         world_ae: world_ae {
             compatible = "zmk,behavior-mod-morph";
             label = "WORLD_AE";
-            bindings = <&none>, <&none>;
+            bindings = <&world_ae_base>, <&world_ae_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        world_ao: world_ao {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_AO";
+            bindings = <&world_ao_base>, <&world_ao_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        world_o: world_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_O";
+            bindings = <&world_o_base>, <&world_o_lsft>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
