@@ -281,12 +281,12 @@
 
         function {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none    &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -298,17 +298,6 @@
 &none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                           &none  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
 &none  &none         &none         &none      &none      &none  &none  &none  &none    &none       &none     &none       &none  &none       &none         &none         &none       &none
 &none  &none         &none         &none      &none             &none  &none  &none    &kp C_STOP  &kp C_PP  &kp C_MUTE         &none       &none         &none         &none       &none
-            >;
-        };
-
-        tmp {
-            bindings = <
-&none  &none         &none         &none      &none                                                                                      &none      &none      &none     &none  &none
-&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
-&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                             &kp RA(APOS)  &world_ao  &world_ae  &world_o  &none  &none
-&none  &none         &none         &none      &none      &none  &none       &none          &none      &none  &none  &none  &none         &none      &none      &none     &none  &none
-&none  &none         &none         &none      &none             &kp ESCAPE  &kp BACKSPACE  &kp TAB    &none  &none  &none                &none      &none      &none     &none  &none
             >;
         };
     };
