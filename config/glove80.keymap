@@ -182,78 +182,23 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&none  &none           &none           &none        &none                                                                                                       &none        &none        &none           &none                      &none
-&none  &none           &none           &none        &none        &none                                                                                   &none  &none        &none        &none           &none                      &none
-&none  &kp Q           &kp W           &lt 2 E      &kp R        &kp T                                                                                   &kp Y  &kp U        &kp I        &kp O           &kp P                      &none
-&none  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                                                                   &kp H  &mt LSHFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LEFT_GUI SINGLE_QUOTE  &none
-&none  &lt 4 Z         &kp X           &kp C        &kp V        &kp B  &none         &none            &none        &none        &none        &none      &kp N  &kp M        &kp COMMA    &kp DOT         &lt 3 SLASH                &none
-&mo 1  &none           &none           &none        &none               &lt 0 ESCAPE  &lt 7 BACKSPACE  &lt 8 TAB    &lt 5 ENTER  &lt 0 SPACE  &lt 9 DEL         &none        &none        &none           &none                      &none
+&none   &none           &none           &none        &none                                                                                                       &none        &none        &none           &none                      &none
+&none   &none           &none           &none        &none        &none                                                                                   &none  &none        &none        &none           &none                      &none
+&none   &kp Q           &kp W           &lt 8 E      &kp R        &kp T                                                                                   &kp Y  &kp U        &kp I        &kp O           &kp P                      &none
+&none   &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G                                                                                   &kp H  &mt LSHFT J  &mt LCTRL K  &mt LEFT_ALT L  &mt LEFT_GUI SINGLE_QUOTE  &none
+&none   &lt 11 Z        &kp X           &kp C        &kp V        &kp B  &none         &none            &none        &none        &none        &none      &kp N  &kp M        &kp COMMA    &kp DOT         &lt 7 SLASH                &none
+&mo 11  &none           &none           &none        &none               &lt 0 ESCAPE  &lt 2 BACKSPACE  &lt 3 TAB    &lt 4 ENTER  &lt 0 SPACE  &lt 6 DEL         &none        &none        &none           &none                      &none
             >;
         };
 
-        magic {
+        media {
             bindings = <
-&bt BT_CLR   &none            &none            &none            &none                                                                                       &none  &none  &none  &none  &bt BT_CLR_ALL
-&none        &none            &none            &none            &none            &none                                                               &none  &none  &none  &none  &none  &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                     &none  &none  &none  &none  &none  &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        window {
-            bindings = <
-&none  &none  &none  &none  &none                                                                     &none             &none             &none             &none             &none
-&none  &none  &none  &none  &none           &none                                              &none  &none             &none             &none             &none             &none
-&none  &none  &none  &none  &none           &none                                              &none  &kp LG(LS(Q))     &none             &none             &none             &none
-&none  &none  &none  &none  &kp LEFT_SHIFT  &none                                              &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
-&none  &none  &none  &none  &none           &none  &none  &none  &none    &none  &none  &none  &none  &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(N7)        &kp LG(N8)        &none
-&none  &none  &none  &none  &none                  &none  &none  &none    &none  &none  &none         &none             &none             &none             &none             &none
-            >;
-        };
-
-        world {
-            bindings = <
-&none  &none         &none         &none      &none                                                                                      &none      &none      &none     &none  &none
-&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
-&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                             &kp RA(APOS)  &world_ao  &world_ae  &world_o  &none  &none
-&none  &none         &none         &none      &none      &none  &none       &none          &none      &none  &none  &none  &none         &none      &none      &none     &none  &none
-&none  &none         &none         &none      &none             &kp ESCAPE  &kp BACKSPACE  &kp TAB    &none  &none  &none                &none      &none      &none     &none  &none
-            >;
-        };
-
-        button {
-            bindings = <
-&none  &none     &none         &none      &none                                                                            &none  &none  &none  &none  &none
-&none  &none     &none         &none      &none      &none                                                          &none  &none  &none  &none  &none  &none
-&none  &none     &none         &kp LC(Z)  &kp LC(Y)  &none                                                          &none  &none  &none  &none  &none  &none
-&none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                          &none  &none  &none  &none  &none  &none
-&none  &none     &kp LC(X)     &kp LC(C)  &kp LC(V)  &none  &none      &none      &none        &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none     &none         &none      &none             &mkp MCLK  &mkp LCLK  &mkp RCLK    &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        number {
-            bindings = <
-&none  &none             &none         &none         &none                                                                                      &none      &none      &none         &none     &none
-&none  &none             &none         &none         &none         &none                                                                 &none  &none      &none      &none         &none     &none
-&none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET                                                     &none  &none      &none      &none         &none     &none
-&none  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL                                                             &none  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &none
-&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none    &none   &none        &none  &none  &none  &none  &none      &none      &none         &none     &none
-&none  &none             &none         &none         &none                            &kp DOT  &kp N0  &kp MINUS    &none  &none  &none         &none      &none      &none         &none     &none
-            >;
-        };
-
-        symbol {
-            bindings = <
-&none  &none                 &none             &none             &none                                                                                                          &none      &none      &none         &none     &none
-&none  &none                 &none             &none             &none             &none                                                                                 &none  &none      &none      &none         &none     &none
-&none  &kp LS(LEFT_BRACKET)  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(RIGHT_BRACKET)                                                                 &none  &none      &none      &none         &none     &none
-&none  &kp LS(SEMI)          &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(EQUAL)                                                                         &none  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &none
-&none  &kp LS(GRAVE)         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)      &none        &none       &none            &none  &none  &none  &none  &none      &none      &none         &none     &none
-&none  &none                 &none             &none             &none                                    &kp LS(DOT)  &kp LS(N0)  &kp LS(MINUS)    &none  &none  &none         &none      &none      &none         &none     &none
+&none  &none         &none         &none      &none                                                                             &none       &none         &none         &none       &none
+&none  &none         &none         &none      &none      &none                                                           &none  &none       &none         &none         &none       &none
+&none  &none         &none         &none      &none      &none                                                           &none  &none       &none         &none         &none       &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                           &none  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
+&none  &none         &none         &none      &none      &none  &none  &none  &none    &none       &none     &none       &none  &none       &none         &none         &none       &none
+&none  &none         &none         &none      &none             &none  &none  &none    &kp C_STOP  &kp C_PP  &kp C_MUTE         &none       &none         &none         &none       &none
             >;
         };
 
@@ -279,6 +224,28 @@
             >;
         };
 
+        number {
+            bindings = <
+&none  &none             &none         &none         &none                                                                                      &none      &none      &none         &none     &none
+&none  &none             &none         &none         &none         &none                                                                 &none  &none      &none      &none         &none     &none
+&none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET                                                     &none  &none      &none      &none         &none     &none
+&none  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL                                                             &none  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &none
+&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none    &none   &none        &none  &none  &none  &none  &none      &none      &none         &none     &none
+&none  &none             &none         &none         &none                            &kp DOT  &kp N0  &kp MINUS    &none  &none  &none         &none      &none      &none         &none     &none
+            >;
+        };
+
+        symbol {
+            bindings = <
+&none  &none                 &none             &none             &none                                                                                                          &none      &none      &none         &none     &none
+&none  &none                 &none             &none             &none             &none                                                                                 &none  &none      &none      &none         &none     &none
+&none  &kp LS(LEFT_BRACKET)  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(RIGHT_BRACKET)                                                                 &none  &none      &none      &none         &none     &none
+&none  &kp LS(SEMI)          &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(EQUAL)                                                                         &none  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &none
+&none  &kp LS(GRAVE)         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)      &none        &none       &none            &none  &none  &none  &none  &none      &none      &none         &none     &none
+&none  &none                 &none             &none             &none                                    &kp LS(DOT)  &kp LS(N0)  &kp LS(MINUS)    &none  &none  &none         &none      &none      &none         &none     &none
+            >;
+        };
+
         function {
             bindings = <
 &none  &none    &none   &none   &none                                                                                 &none      &none      &none     &none     &none
@@ -290,14 +257,47 @@
             >;
         };
 
-        media {
+        world {
             bindings = <
-&none  &none         &none         &none      &none                                                                             &none       &none         &none         &none       &none
-&none  &none         &none         &none      &none      &none                                                           &none  &none       &none         &none         &none       &none
-&none  &none         &none         &none      &none      &none                                                           &none  &none       &none         &none         &none       &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                           &none  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
-&none  &none         &none         &none      &none      &none  &none  &none  &none    &none       &none     &none       &none  &none       &none         &none         &none       &none
-&none  &none         &none         &none      &none             &none  &none  &none    &kp C_STOP  &kp C_PP  &kp C_MUTE         &none       &none         &none         &none       &none
+&none  &none         &none         &none      &none                                                                                      &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none      &none                                                             &none         &none      &none      &none     &none  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                             &kp RA(APOS)  &world_ao  &world_ae  &world_o  &none  &none
+&none  &none         &none         &none      &none      &none  &none       &none          &none      &none  &none  &none  &none         &none      &none      &none     &none  &none
+&none  &none         &none         &none      &none             &kp ESCAPE  &kp BACKSPACE  &kp TAB    &none  &none  &none                &none      &none      &none     &none  &none
+            >;
+        };
+
+        button {
+            bindings = <
+&none  &none     &none         &none      &none                                                                            &none  &none  &none  &none  &none
+&none  &none     &none         &none      &none      &none                                                          &none  &none  &none  &none  &none  &none
+&none  &none     &none         &kp LC(Z)  &kp LC(Y)  &none                                                          &none  &none  &none  &none  &none  &none
+&none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                                                          &none  &none  &none  &none  &none  &none
+&none  &none     &kp LC(X)     &kp LC(C)  &kp LC(V)  &none  &none      &none      &none        &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none     &none         &none      &none             &mkp MCLK  &mkp LCLK  &mkp RCLK    &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        window {
+            bindings = <
+&none  &none  &none  &none  &none                                                                     &none             &none             &none             &none             &none
+&none  &none  &none  &none  &none           &none                                              &none  &none             &none             &none             &none             &none
+&none  &none  &none  &none  &none           &none                                              &none  &kp LG(LS(Q))     &none             &none             &none             &none
+&none  &none  &none  &none  &kp LEFT_SHIFT  &none                                              &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
+&none  &none  &none  &none  &none           &none  &none  &none  &none    &none  &none  &none  &none  &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(N7)        &kp LG(N8)        &none
+&none  &none  &none  &none  &none                  &none  &none  &none    &none  &none  &none         &none             &none             &none             &none             &none
+            >;
+        };
+
+        magic {
+            bindings = <
+&bt BT_CLR   &none            &none            &none            &none                                                                                       &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &none            &none            &none            &none            &none                                                               &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                     &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
