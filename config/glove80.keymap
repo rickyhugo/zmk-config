@@ -270,12 +270,12 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none  &none     &none     &none      &none                                                                     &none      &none      &none      &none      &none
+&none  &none     &none     &none      &none      &none                                              &none       &none      &none      &none      &none      &none
+&none  &none     &none     &none      &none      &none                                              &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                              &caps_word  &none      &none      &none      &none      &none
+&none  &none     &none     &none      &none      &none  &none  &none  &none    &none  &none  &none  &none       &none      &none      &none      &none      &none
+&none  &none     &none     &none      &none             &none  &none  &none    &none  &none  &none              &none      &none      &none      &none      &none
             >;
         };
 
