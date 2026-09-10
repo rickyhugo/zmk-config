@@ -237,12 +237,12 @@
 
         number {
             bindings = <
-&none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none    &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none             &none         &none         &none                                                                                      &none      &none      &none         &none     &none
+&none  &none             &none         &none         &none         &none                                                                 &none  &none      &none      &none         &none     &none
+&none  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET                                                     &none  &none      &none      &none         &none     &none
+&none  &kp SEMI          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL                                                             &none  &kp LSHFT  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &none
+&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none    &none   &none        &none  &none  &none  &none  &none      &none      &none         &none     &none
+&none  &none             &none         &none         &none                            &kp DOT  &kp N0  &kp MINUS    &none  &none  &none         &none      &none      &none         &none     &none
             >;
         };
 
