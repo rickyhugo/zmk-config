@@ -270,12 +270,12 @@
 
         mouse {
             bindings = <
-&none  &none     &none     &none      &none                                                                                 &none      &none      &none      &none      &none
-&none  &none     &none     &none      &none      &none                                                          &none       &none      &none      &none      &none      &none
-&none  &none     &none     &none      &none      &none                                                          &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                                          &caps_word  &none      &none      &none      &none      &none
-&none  &none     &none     &none      &none      &none  &none  &none  &none    &none      &none      &none      &none       &none      &none      &none      &none      &none
-&none  &none     &none     &none      &none             &none  &none  &none    &mkp RCLK  &mkp LCLK  &mkp MCLK              &none      &none      &none      &none      &none
+&none  &none     &none     &none      &none                                                                                 &none           &none           &none         &none            &none
+&none  &none     &none     &none      &none      &none                                                          &none       &none           &none           &none         &none            &none
+&none  &none     &none     &none      &none      &none                                                          &kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)     &kp LC(Y)        &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none                                                          &caps_word  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
+&none  &none     &none     &none      &none      &none  &none  &none  &none    &none      &none      &none      &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+&none  &none     &none     &none      &none             &none  &none  &none    &mkp RCLK  &mkp LCLK  &mkp MCLK              &none           &none           &none         &none            &none
             >;
         };
 
