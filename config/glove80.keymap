@@ -90,12 +90,12 @@
 
         window {
             bindings = <
-&none  &none  &none  &none  &none                                                            &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                                              &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none    &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                                                                     &none             &none             &none             &none             &none
+&none  &none  &none  &none  &none           &none                                              &none  &none             &none             &none             &none             &none
+&none  &none  &none  &none  &none           &none                                              &none  &kp LG(LS(Q))     &none             &none             &none             &none
+&none  &none  &none  &none  &kp LEFT_SHIFT  &none                                              &none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none
+&none  &none  &none  &none  &none           &none  &none  &none  &none    &none  &none  &none  &none  &kp LG(N5)        &kp LG(NUMBER_6)  &kp LG(N7)        &kp LG(N8)        &none
+&none  &none  &none  &none  &none                  &none  &none  &none    &none  &none  &none         &none             &none             &none             &none             &none
             >;
         };
 
