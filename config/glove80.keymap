@@ -16,6 +16,8 @@
 #define LOWER 1
 #define MAGIC 2
 
+&mt { tapping-term-ms = <150>; };
+
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
