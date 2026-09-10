@@ -27,6 +27,15 @@
             tapping-term-ms = <200>;
             bindings = <&mo 0>, <&to 0>;
         };
+
+        world_ae: world_ae {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_AE";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -52,6 +61,90 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
+        };
+
+        world_ao_base: world_ao_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp ASTERISK &kp A>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "WORLD_AO_BASE";
+        };
+
+        world_ao_lsft: world_ao_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp ASTERISK &kp LS(A)>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "WORLD_AO_LSFT";
+        };
+
+        world_ae_base: world_ae_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp A>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "WORLD_AE_BASE";
+        };
+
+        world_ae_lsft: world_ae_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp LS(A)>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "WORLD_AE_LSFT";
+        };
+
+        world_o_base: world_o_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp O>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "WORLD_O_BASE";
+        };
+
+        world_o_lsft: world_o_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES &kp O>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
+
+            label = "WORLD_O_LSFT";
         };
     };
 
