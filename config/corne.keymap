@@ -160,7 +160,7 @@
 
         media {
             bindings = <
-&none  &none     &none     &none      &none      &none    &bt BT_CLR_ALL  &bt BT_CLR    &none         &none         &none         &none
+&none  &none     &none     &none      &none      &none    &bt BT_CLR_ALL  &bt BT_CLR    &none         &none         &tog 12       &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp LA(LC(S))   &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    &none
 &none  &none     &none     &none      &none      &none    &out OUT_USB    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
                            &none      &none      &none    &kp C_STOP      &kp C_PP      &kp C_MUTE
@@ -254,6 +254,15 @@
 &none  &none  &none  &none  &kp LSHFT  &none    &none  &kp LA(N1)     &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &none
 &none  &none  &none  &none  &none      &none    &none  &kp LA(N5)     &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &none
                      &none  &none      &none    &none  &none          &none
+            >;
+        };
+
+        os-macos {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
