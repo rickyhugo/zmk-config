@@ -140,6 +140,18 @@
         };
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        buttons_macos {
+            if-layers = <8 12>;
+            then-layer = <10>;
+        };
+        windows_macos {
+            if-layers = <9 12>;
+            then-layer = <11>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
