@@ -238,5 +238,14 @@
                      &none  &none      &none    &none  &none          &none
             >;
         };
+
+        window-macos {
+            bindings = <
+&none  &none  &none  &none  &none      &none    &none  &kp LS(LA(Q))  &none       &none       &none       &none
+&none  &none  &none  &none  &kp LSHFT  &none    &none  &kp LA(N1)     &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &none
+&none  &none  &none  &none  &none      &none    &none  &kp LA(N5)     &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &none
+                     &none  &none      &none    &none  &none          &none
+            >;
+        };
     };
 };
