@@ -109,6 +109,78 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
+        world_ao_macos_base: world_ao_macos_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp RA(A)>;
+
+            label = "WORLD_AO_MACOS_BASE";
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+
+        world_ao_macos_lsft: world_ao_macos_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp RA(LS(A))>;
+
+            label = "WORLD_AO_MACOS_LSFT";
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+
+        world_ae_macos_base: world_ae_macos_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp RA(U) &kp A>;
+
+            label = "WORLD_AE_MACOS_BASE";
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+
+        world_ae_macos_lsft: world_ae_macos_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp RA(U) &kp LS(A)>;
+
+            label = "WORLD_AE_MACOS_LSFT";
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+
+        world_o_macos_base: world_o_macos_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp RA(U) &kp O>;
+
+            label = "WORLD_O_MACOS_BASE";
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+
+        world_o_macos_lsft: world_o_macos_lsft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp RA(U) &kp LS(O)>;
+
+            label = "WORLD_O_MACOS_LSFT";
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
     };
 
     behaviors {
@@ -138,6 +210,33 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        world_ao_macos: world_ao_macos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_AO_MACOS";
+            bindings = <&world_ao_macos_base>, <&world_ao_macos_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        world_ae_macos: world_ae_macos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_AE_MACOS";
+            bindings = <&world_ae_macos_base>, <&world_ae_macos_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        world_o_macos: world_o_macos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WORLD_O_MACOS";
+            bindings = <&world_o_macos_base>, <&world_o_macos_lsft>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     conditional_layers {
@@ -156,6 +255,11 @@
         windows_macos {
             if-layers = <9 13>;
             then-layer = <12>;
+        };
+
+        world_macos {
+            if-layers = <7 13>;
+            then-layer = <14>;
         };
     };
 
@@ -291,6 +395,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        world-macos {
+            bindings = <
+&none  &none     &none     &none      &none      &none      &none         &none            &none            &none           &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none      &kp RA(APOS)  &world_ao_macos  &world_ae_macos  &world_o_macos  &none  &none
+&none  &none     &none     &none      &none      &none      &none         &none            &none            &none           &none  &none
+                           &kp ESC    &kp BSPC   &kp TAB    &kp ENTER     &kp SPACE        &kp DELETE
             >;
         };
     };
